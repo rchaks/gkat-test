@@ -30,3 +30,23 @@ This is some useful information
    ```
    git push -u origin <name_of_branch>
    ```
+
+### Create Pull Request (through GUI)
+
+base: main, compare with: <name_of_branch>
+
+### Wait for approval or request changes
+#### Assuming changes are required
+1. Make changes
+2. Commit them `git add -A; commit --amend`
+3. `git push --force`
+
+### Once approved, merge through GUI, switch back to mainline & delete the old feature branch
+1. git checkout main
+2. git pull
+3. git branch -d <name of branch>
+
+###
+
+Rinse & repeat
+
